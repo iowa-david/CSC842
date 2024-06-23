@@ -15,9 +15,8 @@ The script starts with two global lists containing the values of assumed keylogg
 - Combining both file reviews and running processes is a straightforward process.
 - Python's print formatting syntax helps streamline the combination of complex objects in a friendly, easy-to-read output without string concatenation or other string manipulation processes.
 ## Room for improvement:
--I want to find the signatures of key loggers and other malicious software to embed and check the running processes. The current script hopes the creators of the malicious software had strong indicators of what their software is doing. Checking files that are not executing in combination with my previous script would allow me to check programs that are actively running and at rest. 
-
--Additionally, as the crawling through folders is completed, I would like to use the logic found within the process to open files to see if there is PII data, such as social security numbers, in easily opened documents.
+- I want to find the signatures of key loggers and other malicious software to embed and check the running processes. The current script hopes the creators of the malicious software had strong indicators of what their software is doing. Checking files that are not executing in combination with my previous script would allow me to check programs that are actively running and at rest. 
+- Additionally, as the crawling through folders is completed, I would like to use the logic found within the process to open files to see if there is PII data, such as social security numbers, in easily opened documents.
 
 ## Files
 - Source code: https://github.com/iowa-david/CSC842/blob/main/readme.md
