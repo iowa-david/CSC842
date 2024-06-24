@@ -2,7 +2,7 @@ import os
 import psutil
 
 keyloggerFiles = [ "keylogger.exe", "logger.exe", "kl.exe"]
-processesNames = [ "keylogger", "logger", "kl"]
+processesNames = [ "keylogger", "logger", "keylog"]
 
 def checkFiles():
 	foundFiles = []
@@ -10,8 +10,9 @@ def checkFiles():
 	for root, dirs, files in os.walk("/"):
 		for file in files:
 			cnt+=1
-			if file in keyloggerFiles:
-				foundFiles.append(os.path.join(root, file))
+			for name in processesNames:
+				if name in str(file):
+					foundFiles.append(os.path.join(root, file))
 	
 	print(f"{cnt} files checked")
 	return foundFiles
