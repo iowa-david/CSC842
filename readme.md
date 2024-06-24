@@ -20,4 +20,7 @@ The script starts with two global lists containing the values of assumed keylogg
 
 ## Files
 - Source code: https://github.com/iowa-david/CSC842/blob/main/readme.md
-- Recording
+- Recording: https://youtu.be/ws_uoC6s3EA
+
+## Links
+https://docs.python.org/3/library/os.html
